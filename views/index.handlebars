@@ -1,0 +1,64 @@
+        <div class=' d-flex justify-content-evenly mt-5 mb-5 bg-light align-items-center'
+                  >
+        <h1>Bienvenido {{user}}</h1>
+        <div >
+        <a href="/logout">Logout</a>
+        </div>
+        </div>
+
+<form action="/productos" method="post" id="form-products">
+      <label for="title" class="form-label">Nombre del Producto</label>
+      <input type="text" name="title" id="input-title" class="form-control" placeholder="title" >
+      <label for="price" class="form-label">Precio</label>
+      <input type="number" name="price" id="input-price"  class="form-control" placeholder="price" >
+      <label for="thumbnail" class="form-label">Direccion https</label>
+      <input type="text" name="thumbnail" id="input-thumbnail" class="form-control" placeholder="thumbnail" ><br>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+<h1>INCORPORAR PRODUCTOS</h1>
+
+<form action="/productos" method="post" id="form-products">
+      <label for="title" class="form-label">Nombre del Producto</label>
+      <input type="text" name="title" id="input-title" class="form-control" placeholder="title" >
+      <label for="price" class="form-label">Precio</label>
+      <input type="number" name="price" id="input-price"  class="form-control" placeholder="price" >
+      <label for="thumbnail" class="form-label">Direccion https</label>
+      <input type="text" name="thumbnail" id="input-thumbnail" class="form-control" placeholder="thumbnail" ><br>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+<h1>LISTA DE PRODUCTOS</h1>
+<div>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Thumbnail</th>
+    </tr>
+    </thead>
+    <tbody id="show-products">
+    </tbody>
+  </table>
+</div>
+<div>
+ <h1>CHAT</h1>
+ <h2 id="title"></h2>
+ <div>
+<form id="form-message">
+    <input type="email" name="email" id="input-email" placeholder="Ingresa tu correo electronico" required="">
+    <input type="nombre" name="nombre" id="input-nombre" placeholder="Ingresa tu nombre" required="">
+    <input type="apellido" name="apellido" id="input-apellido" placeholder="Ingresa tu apellido" required="">
+    <input type="edad" name="edad" id="input-edad" placeholder="Ingresa tu edad" required="">
+    <input type="alias" name="alias" id="input-alias" placeholder="Ingresa tu alias" required="">
+    <input type="avatar" name="avatar" id="input-avatar" placeholder="Ingresa un URL de avatar" required="">
+    <ul id="list-messages"></ul>
+    <input type="text" name="message" id="input-message" placeholder="Ingresa mensaje..." required="">
+    <button type="submit">Enviar</button>
+
+  
+</form>
+</div>
+</div>
